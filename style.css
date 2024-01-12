@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Times New Roman;
+}
+
+.hero {
+  background-image: url("image/image\ \(6\).jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-section {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.930), rgba(37, 30, 72, 0.570));
+}
+
+.nave-bar h2 {
+  font-size: 2rem;
+  padding-left: 50px;
+  color: white;
+}
+
+.nave-bar li {
+  list-style: none;
+}
+
+.nave-bar a {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+  font-family: Arial;
+  color: white;
+}
+
+.nave-bar a:hover {
+  color: #efa765;
+  transition: 0.2s;
+}
+
+.nave-bar button {
+  height: 45px;
+  width: 160px;
+  font-family: Arial;
+  font-size: 1em;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin-right: 50px;
+}
+.nave-bar button:hover {
+  background-color: white;
+  color: #efa765;
+  transition: 0.2s;
+}
+
+.nave-bar i {
+  display: none;
+}
+
+.nave-bar nav{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nave-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4vw;
+}
+
+.hero-container {
+  height: calc(100% - 100px);
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.contain {
+  height: auto;
+  width: 800px;
+}
+.contain h1 {
+  font-size: 6em;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  color: #efa765;
+}
+
+.but-mobial {
+  height: 45px;
+  width: 160px;
+  font-family: Arial;
+  font-size: 1em;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.but-mobial {
+  display: none;
+}
+
+@media screen and (max-width: 576px){
+  .nave-bar h2 {
+    font-size: 2em;
+    padding-left: 20px;
+  }
+  .nave-bar li {
+    display: none;
+  }
+  .nave-bar button {
+    display: none;
+  }
+  .contain h1 {
+    font-size: 3.5em;
+  }
+  .hero-container {
+    align-items: center;
+  }
+  .contain h1 {
+    padding-left: 20px;
+  }
+  .but-mobial {
+    display: block;
+  }
+  .nave-bar i {
+    display: block;
+    margin-right: 20px;
+    font-size: 2em;
+    color: white;
+  }
+}
+
